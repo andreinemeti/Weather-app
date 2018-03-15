@@ -1,0 +1,74 @@
+
+.main-wrapper {
+	max-width:450px;
+	border:1px solid #f1f1f1;
+	margin:50px auto;
+	text-align:center;
+	border-radius:9px;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, .3), 0 15px 12px rgba(0, 0, 0, .1);
+	padding:15px;
+	font-family: 'Raleway', sans-serif 
+	}
+
+.inline-block {
+	display:inline-block;
+}
+
+.weather-container {
+	display: inline-flex;
+	width:100%;
+}
+
+button {
+	background: #0000ff;
+    color: white;
+    border: none;
+    height: 27px;
+    width: 30px;
+    cursor:pointer;
+}
+
+input[type="text"] {
+	border: 1px solid #0000ff;
+    color: blue;
+    padding: 5px;
+}
+.temperature, .weatherIcon {
+	align-items: center;
+ 	width:50%;
+    justify-content: center;
+    font-size:50px;
+}
+
+.temperature {
+	box-sizing:border-box;
+	border:2px solid #0000ff;
+	font-weight:bold;
+	display: flex;
+	position:relative;
+}
+
+.toggleBtn {
+	cursor:pointer;
+	position: absolute;
+    top: 5px;
+    left: 5px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    color: white;
+    background: #0000ff;
+}
+
+.text {
+	height:65px;
+}
+
+.details {
+	padding: 0 20px;
+}
+
+footer p {
+	margin:0;padding:0;
+}

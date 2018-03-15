@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset=UTF-8>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta content="width=device-width,initial-scale=1" name=viewport>
+      <meta content="Weather application built as part of the curriculum of FreeCodeCamp"/>
+      <meta content="weather app, weather app freecodecamp, freecodecamp, andrei nemeti weather app, andrei nemeti, javascript weather app, codepen weather app, weather application, weather html, weather app design" name=keywords>
+      <title>Weather App</title>   
+      <meta content="Andrei Nemeti" name=author>
+      <meta name="referrer" content="origin">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel=stylesheet>
+    
+     
+   </head>
+   <body>
+     <div class="main-wrapper">
+          <div class="top-section">
+            <header>
+              <h1>Weather App - FreeCodeCamp</h1>
+            </header>
+            <form>
+              <input type="text" name="city" id="city" placeholder="Search for a city...">
+              <button type="submit"><span class=" fa fa-search"></span></button>
+            </form>
+            <br/>
+          </div>  <!--  end top section -->
+          <hr/>
+          <div class="middle-section">           
+              <h2 id="city">CLUJ-NAPOCA</h2>
+              <p id="date"></p>
+              <div class="weather-container">
+                  <div class="inline-block temperature">
+                    <div class="toggleBtn">
+                      <span>&#8451;</span>
+                    </div>
+                      <span id="temperature">7 &#8451;</span>
+                  </div>
+                  <div class="inline-block weatherIcon">
+                      <div class="icon">
+                          <canvas id="icon2" width="55" height="55"></canvas>
+                      </div>
+                      <div class="text">
+                          <span id="weatherIcon">Sunny</span>
+
+                      </div>
+
+                  </div>
+              </div>
+
+            <br/><br/>
+          </div> <!-- end middle section -->
+          <hr/>
+            <div class="bottom-section">
+              <div class="inline-block details">
+                <p>Wind</p>
+              <span id="wind">
+                7m/s
+              </span>
+              </div>
+              <div class="inline-block details">
+                <p>Fog</p>
+               <span id="fog">
+                13x/s
+              </span>
+              </div>
+              <div class="inline-block details">
+                <p>Humidity</p>
+               <span id="humidity">
+                7l/m
+              </span>
+              </div>
+            </div> <!-- end bottom section -->
+            <hr/>
+                     <footer>
+              <p>Coded by Andrei Nemeti</p>
+            </footer>
+          </div> <!-- end main wrapper -->
+
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="skycons.js"></script>
+  <script src="script.js"></script>
+
+   </body>
+   </html>
