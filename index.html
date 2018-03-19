@@ -28,21 +28,21 @@
               <h1>Weather App - FreeCodeCamp</h1>
             </header>
             <form>
-              <input type="text" name="city" id="city" placeholder="Search for a city...">
-              <button type="submit"><span class=" fa fa-search"></span></button>
+              <input type="text" name="city" id="searchInput" placeholder="Search for a city...">
+              <button type="button" id="searchBtn"><span class=" fa fa-search"></span></button>
             </form>
             <br/>
           </div>  <!--  end top section -->
           <hr/>
           <div class="middle-section">           
-              <h2 id="city">CLUJ-NAPOCA</h2>
+              <h2 id="city"></h2>
               <p id="date"></p>
               <div class="weather-container">
                   <div class="inline-block temperature">
                     <div class="toggleBtn">
                       <span>&#8451;</span>
                     </div>
-                      <span id="temperature">7 &#8451;</span>
+                      <span id="temperature"></span>
                   </div>
                   <div class="inline-block weatherIcon">
                       <div class="icon">
@@ -67,8 +67,8 @@
               </span>
               </div>
               <div class="inline-block details">
-                <p>Fog</p>
-               <span id="fog">
+                <p>Pressure</p>
+               <span id="pressure">
                 13x/s
               </span>
               </div>
@@ -81,8 +81,10 @@
             </div> <!-- end bottom section -->
             <hr/>
                      <footer>
+                               
               <p>Coded by Andrei Nemeti</p>
             </footer>
+  
           </div> <!-- end main wrapper -->
 
  

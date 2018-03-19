@@ -1,5 +1,8 @@
-
+body {
+	background:url("https://i.pinimg.com/originals/c7/e0/b4/c7e0b4fb51a4ef2c2c1d9fa0de129771.jpg");
+}
 .main-wrapper {
+	background:white;
 	max-width:450px;
 	border:1px solid #f1f1f1;
 	margin:50px auto;
