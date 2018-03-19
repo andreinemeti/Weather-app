@@ -23,14 +23,14 @@ $(function(){
       latitude = position.coords.latitude
       longitude = position.coords.longitude;
       $.ajax ({  
-        url: 'https://api.openweathermap.org/data/2.5/weather?lat='+ latitude +'&lon=' + longitude + '&APPID=a550e6d882e111463620f5ce6b2666a5',
+        url: 'https://api.openweathermap.org/data/2.5/weather?lat='+ latitude +'&lon=' + longitude + '&units=metric&APPID=a550e6d882e111463620f5ce6b2666a5',
         type: 'POST',
         dataType: 'json',
         success(response) {
             $('#city').text(response.name);
             $('#temperature').html(response.main.temp.toFixed()  + ' ' + degree);
             $('#weatherIcon').text(response.weather[0].main);
-            $('#wind').text(response.wind.speed + ' km/h');
+            $('#wind').text(response.wind.speed + ' m/s');
             $('#humidity').text(response.main.humidity + ' %');
             $('#pressure').text(response.main.pressure + ' hpa');
         },
@@ -44,12 +44,13 @@ $(function(){
 
 
 
-let degree = '&#8457';   
+let degree = '&#8451';   
+//&#8457 farehnheit
 let city = $('#searchInput');
 
 $('#searchBtn').on('click', function(){
   $.ajax ({  
-  url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city.val() + '&APPID=a550e6d882e111463620f5ce6b2666a5',
+  url: 'https://api.openweathermap.org/data/2.5/weather?q=' + city.val() + '&units=metric&APPID=a550e6d882e111463620f5ce6b2666a5',
   type: 'POST',
   dataType: 'json',
   success(response) {
@@ -57,7 +58,7 @@ $('#searchBtn').on('click', function(){
   $('#city').text(response.name);
   $('#temperature').html(response.main.temp.toFixed()  + ' ' + degree);
   $('#weatherIcon').text(response.weather[0].main);
-  $('#wind').text(response.wind.speed + ' km/h');
+  $('#wind').text(response.wind.speed + ' m/s');
   $('#humidity').text(response.main.humidity + ' %');
   $('#pressure').text(response.main.pressure + ' hpa');
 
@@ -68,6 +69,12 @@ $('#searchBtn').on('click', function(){
 });
 });
 
+let fahrenheitToCelsius = (fahrenheit) => {
+  console.log((fahrenheit - 32) * (5/9));
+  return ((fahrenheit - 32) * (5/9));
+}
+
+fahrenheitToCelsius(276);
 
 
 
