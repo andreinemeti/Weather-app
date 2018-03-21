@@ -23,9 +23,13 @@
    </head>
    <body>
      <div class="main-wrapper">
+     	<div class="mobile-only">
+     		<h5 class="mobile-only">Please activate your location service if you want the app to be accurate.</h5>
+     		<hr/>
+     	</div>
           <div class="top-section">
             <header>
-              <h1>Weather App - FreeCodeCamp</h1>
+              <h1>Weather App</h1>
             </header>
             <form>
               <input type="text" name="city" id="searchInput" placeholder="Search for a city...">
@@ -39,15 +43,14 @@
               <p id="date"></p>
               <div class="weather-container">
                   <div class="inline-block temperature">
-                    <div class="toggleBtn">
+                    <div class="temperatureIcon">
                       <span>&#8451;</span>
                     </div>
                       <span id="temperature"></span>
                   </div>
                   <div class="inline-block weatherIcon">
                       <div class="icon">
-<!--                           <canvas id="icon2" width="55" height="55"></canvas>
- -->                      </div>
+                  	  </div>
                       <div class="text">
                           <span id="weatherIcon"></span>
 
@@ -83,13 +86,14 @@
                      <footer>
                                
               <p>Coded by Andrei Nemeti</p>
+
+              <a href="https://www.linkedin.com/in/andrei-marian-nemeti/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
             </footer>
   
           </div> <!-- end main wrapper -->
 
  
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="skycons.js"></script>
   <script src="script.js"></script>
 
    </body>
